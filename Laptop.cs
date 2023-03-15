@@ -4,9 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Technology
 {
-    public class Laptop
+    public class Laptop : Computer
     {
+        public double NumOfUsb;
+        public Laptop(int numOfUsb, double ram, double screenSize, string oS): base(ram, screenSize, oS)
+        {
+            NumOfUsb = numOfUsb;
+        }
+        public void StuffedCheetos (int numOfCheetos)
+        {
+            NumOfUsb = numOfCheetos;
+        }
     }
 }
